@@ -1,0 +1,5 @@
+print("Wprowadź słowo do odwrócenia: ")
+word = input()
+word_list = list(word)
+word_list.reverse()
+print("".join(word_list))
