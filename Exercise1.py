@@ -5,7 +5,7 @@ print('Wprowadź dane do równania')
 
 try:
     print('a = ')
-    a = int(input())
+    a = int(input())#input zawsze zczytuje stringa, dlatego jest w nawiasie, ponieważ potem jest zamieniany na zmienna intowa
     print('b = ')
     b = int(input())
     print('c = ')
@@ -20,7 +20,7 @@ if delta < 0:
     print('Delta mniejsza od zera, brak rozwiązań')
     sys.exit()
     
-x1 = (-b - math.sqrt(delta))/(2*a)
+x1 = (-b - math.sqrt(delta))/(2*a)#math.sqrt to pierwiastek
 x2 = (-b + math.sqrt(delta))/(2*a)
 
 print('x1 = ', x1)

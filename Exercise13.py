@@ -3,4 +3,5 @@ min = 100000
 for i in data:
     if i < min:
         min = i
+        
 print(min)

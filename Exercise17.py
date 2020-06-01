@@ -1,6 +1,6 @@
 import random
 
-def get_triangle(x: int):
+def get_triangle(x):
     return x*x*x
     
 for i in range(50):

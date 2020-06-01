@@ -5,4 +5,7 @@ def print_emoji(x):
 
 print("Podaj emotkę: ")
 x = input()
-print_emoji(x)
+if x not in data:
+    print('slownik nie posiada takiej emotki')
+else:
+    print_emoji(x)

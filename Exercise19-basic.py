@@ -9,26 +9,26 @@ N = int(input())
 
 start = time.time()
 
-matrix_m, matrix_n, matrix_suma = [], [], []
+matrix_1, matrix_2, matrix_suma = [], [], []
 
 for m in range(M):
-    pomoc_m, pomoc_n = [], []
+    pomoc_1, pomoc_2 = [], []
     for n in range(N):
-        pomoc_n.append(random.randint(1, 14))
-        pomoc_m.append(random.randint(1, 14))
-    matrix_n.append(pomoc_n) 
-    matrix_m.append(pomoc_m)
+        pomoc_1.append(random.randint(1, 14))
+        pomoc_2.append(random.randint(1, 14))
+    matrix_1.append(pomoc_1) 
+    matrix_2.append(pomoc_2)
     
 for m in range(M):
-    temp = []
+    pomoc = []
     for n in range(N):
-        temp.append(matrix_m[m][n]+matrix_n[m][n])
-    matrix_suma.append(temp)
+        pomoc.append(matrix_1[m][n]+matrix_2[m][n])
+    matrix_suma.append(pomoc)
     
 end = time.time()
         
-print(matrix_m)
-print(matrix_n)
+print(matrix_1)
+print(matrix_2)
 print(matrix_suma)
 print("Czas wykonania: ", end-start)
 
