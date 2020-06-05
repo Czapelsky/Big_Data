@@ -3,8 +3,9 @@ def to_binary(a):
         return "0"
     result = []
     while(a>=1):
-        result.append(str(a%2))
+        result.append(str(a%2))#dodaje reszte z dzielenia podanej liczby przez 2 do tablicy result
         a = int(a / 2)
+    result.reverse()#obracamy tablice dwojkowa
     return "".join(result)
 
 print("Podaj liczbę:")
